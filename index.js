@@ -3,30 +3,44 @@ const https = require('https');
 const lbl = require('line-by-line');
 
 const txt = new lbl('index.md');
-console.log(txt);
-
 let errorObj = {};
 
 txt.on('line', function (line) {
 
     if (line.startsWith("https")){
-        https.get(line.split(" ")[0], (res) => {
-            if (res.statusCode !== "200") {
-                errorObj[res.statusCode] = res.url;
+
+        const options = {
+            hostname: encodeURI(line.split(" ")[0]),
+            rejectUnauthorized: false,
+            method: 'GET'
+        };
+
+        https.get(options, (res) => {
+            if (res.statusCode !== 200) {
+                setTimeout(()=>{
+                    errorObj[res.statusCode + line.split(" ")[0]] = line.split(" ")[0];
+                }, 10)
             }
         }).on('error', (e) => {
             console.error(e);
         });
     } else if (line.startsWith("http")){
 
-        http.get(line.split(" ")[0], (res) => {
-            if (res.statusCode !== "200") {
-                errorObj[res.statusCode] = res.url;
-            }
+        const options = {
+            hostname: line.split(" ")[0],
+            rejectUnauthorized: false,
+            method: 'GET'
+        };
+
+        http.get(options, (res) => {
+            if (res.statusCode !== 200) {
+                setTimeout(()=>{
+                    errorObj[res.statusCode + line.split(" ")[0]] = line.split(" ")[0];
+                }, 10)            }
         }).on('error', (e) => {
             console.error(e);
         });
     } 
-
-    console.log(errorObj);
 });
+
+console.log("help me");
