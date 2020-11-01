@@ -364,6 +364,7 @@ https://www.cin.ufpe.br/~cavmj/104The%20Pragmatic%20Programmer,%20From%20Journey
 http://guanzhou.pub/files/Computer%20System_EN.pdf - Computer Systems: A Programmer's Perspective 
 https://github.com/Yang-Yanxiang/Designing-Data-Intensive-Applications/blob/master/Designing%20Data%20Intensive%20Applications.pdf - Designing Data-Intensive Applications  
 https://everythingcomputerscience.com/books/schoolboek-data_structures_and_algorithms_in_java.pdf - Data structures and algorithms in Java  
+http://aroma.vn/web/wp-content/uploads/2016/11/code-complete-2nd-edition-v413hav.pdf - Code complete  
 https://github.com/getify/You-Dont-Know-JS  
 https://thestandoutdeveloper.com/ - Another one that highly impacted me as a developer to better myself and push my comfort zone  
 https://eloquentjavascript.net/ - Eloquent JavaScript  
@@ -425,6 +426,9 @@ https://github.com/awesomedata/awesome-public-datasets
 https://github.com/topics/awesome-list  
 https://github.com/cyrusstoller/list-of-lists  
 https://github.com/prakhar1989/awesome-courses  
+
+## Find every web performance tool
+https://www.swyx.io/webperf-tests/  
 
 ## Find help
 https://chingu.io/ - From a remote developer
@@ -536,7 +540,8 @@ https://google.github.io/styleguide/pyguide.html
 ## Read something fascinating
 > A very random assortment, but articles that have impacted me as a developer positively, and made me think of problems/aspects of my life in new ways  
   
-https://blog.bradfieldcs.com/in-2017-learn-every-language-59b11f68eee#.i500mt6fg
+https://blog.bradfieldcs.com/in-2017-learn-every-language-59b11f68eee#.i500mt6fg  
+https://training.kalzumeus.com/newsletters/archive/do-not-end-the-week-with-nothing  
 https://topmediumstories.com/  
 https://blog.bettyblocks.com/7-things-developers-hate-most-about-their-job  
 http://igstan.ro/posts/2017-06-06-unicode-vs-utf-8.html  
